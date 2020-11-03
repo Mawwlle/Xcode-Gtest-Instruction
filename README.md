@@ -5,23 +5,23 @@ So, if you face a problem, you need to do C ++ unit testing (Google Test), but y
 This repository have little math dylib and directory main, which contains cpp file with which you can use the library. You can download and play with it.
 
 Instruction:
- 1. Creare or download C++ STL Library.
+ 1.Creare or download C++ STL Library.
  
- 2. Make some function.(or just download mine). Install CMake->Tools-How Install for Command Line Use->follow the instructions
+ 2.Make some function.(or just download mine). Install CMake->Tools-How Install for Command Line Use->follow the instructions
  
- 3. Further you need download in project directory googletest framework https://github.com/google/googletest.git and download this https://github.com/mattstevens/xcode-googletest.git
+ 3.Further you need download in project directory googletest framework https://github.com/google/googletest.git and download this https://github.com/mattstevens/xcode-googletest.git
  
- 4. Open terminal(Without homebrew) 
+ 4.Open terminal(Without homebrew) 
  
- 5. cd googletest
+ 5.cd googletest
  
- 6. mkdir build
+ 6.mkdir build
  
- 7. cd build
+ 7.cd build
  
- 8. cmake ..
+ 8.cmake ..
  
- 9. make
+ 9.make
  
  10.make install
  
