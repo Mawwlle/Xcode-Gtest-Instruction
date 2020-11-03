@@ -26,26 +26,26 @@ std::string Sqrt(std::string agreement){
     using namespace std::literals::chrono_literals;
     using namespace MathLibrary;
     int root = 0,power = 0;
-    std::cout<<"Введите 2 числа A и k"<<std::endl;
-    std::cout<<"где \nA - подкоренное выражение (натуральное число: 1,2..n)"<<std::endl;
-    std::cout<<"k - степень корня (натуральное число: 1,2..n)\n"<<std::endl;
+    std::cout<<"Input 2 number A and k"<<std::endl;
+    std::cout<<" \nA - root expression (natural number: 1,2..n)"<<std::endl;
+    std::cout<<"k - root degree (natural number: 1,2..n)\n"<<std::endl;
     std::this_thread::sleep_for(2s);
 enter_value:
-    std::cout<<"Введите A >>> ";
+    std::cout<<"Input A >>> ";
     std::cin >> root;
     if ((std::cin.fail()) || (root <= 0))
     {
         std::cin.clear();
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         
-        std::cout << "Произошла ошибка при вводе номера операции. Пожалуйста, попробуйте снова." << std::endl;
+        std::cout << "Error. Please, try again." << std::endl;
         std::cout << std::endl;
         
         goto enter_value;
     }
     
 enter_second_value:
-    std::cout<<"Введите k >>> ";
+    std::cout<<"Input k >>> ";
     std::cin >> power;
     
     if ((std::cin.fail()) || (power <= 0))
@@ -53,7 +53,7 @@ enter_second_value:
         std::cin.clear();
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         
-        std::cout << "Произошла ошибка при вводе номера операции. Пожалуйста, попробуйте снова." << std::endl;
+        std::cout << "Error. Please, try again." << std::endl;
         std::cout << std::endl;
         
         goto enter_second_value;
@@ -67,12 +67,12 @@ enter_second_value:
     std::cout<< ".";
     std::this_thread::sleep_for(0.3s);
     std::cout<< ".\n\n";
-    std::cout <<"Результат >>> "<< MathLibrary::RootCalc(root, power) << std::endl;
-    std::cout <<"Хотите ли вы вычислить корень повторно y/n >>> ";
+    std::cout <<"Result >>> "<< MathLibrary::RootCalc(root, power) << std::endl;
+    std::cout <<"Do you want to re-compute the root y/n >>> ";
     std::cin >> agreement;
     while (agreement != "y" && agreement != "n"){
-        std::cout << "Неверный формат ввода!\n";
-        std::cout << "Хотите ли вы вычислить корень повторно y/n >>> ";
+        std::cout << "Invalid input format!\n";
+        std::cout << "Do you want to re-compute the root y/n >>> ";
         std::cin >> agreement;
     }
     return agreement;
