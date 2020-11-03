@@ -10,11 +10,11 @@
 
 int main()
 {
-    /*std::string agreement = "y";
+    std::string agreement = "y";
     while (agreement == "y") {
         agreement = Sqrt(agreement);
         std::cout<<"_____________________________________________________\n";
-    }*/
+    }
     for(int n = 0;n<10;n++){
     std::cout<<"Fibbo = "<<SimpleMathOperation::Fibbo(n)<<" ";
         std::cout<<"Factor = "<<SimpleMathOperation::Factor(n)<<std::endl;
