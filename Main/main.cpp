@@ -17,7 +17,7 @@ int main()
     }
     for(int n = 0;n<10;n++){
     std::cout<<"Fibbo = "<<SimpleMathOperation::Fibbo(n)<<" ";
-        std::cout<<"Factor = "<<SimpleMathOperation::Factor(n)<<std::endl;
-}
+    std::cout<<"Factor = "<<SimpleMathOperation::Factor(n)<<std::endl;
+    }
 }
 
