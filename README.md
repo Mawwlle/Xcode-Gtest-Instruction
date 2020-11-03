@@ -45,7 +45,7 @@ Instruction:
  
  20.Create new folder and c ++ file inside. Drag file in xcode (In the dialog box, in the target item select your test)
  
- 21.In c++ file write thic code:
+ 21.In c++ file write this code:
  
  22.In this folder you must add GoogleTests.mm file (xcode-googletest->Bundle->GoogleTests.mm)
  
