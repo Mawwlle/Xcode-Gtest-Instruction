@@ -18,5 +18,5 @@ jobs:
 
       - name: Run tests
         run: |
-          g++ -Wall -o sample sample.cpp
-          ./sample
+          g++ -Wall -o main main.cpp
+          ./main
